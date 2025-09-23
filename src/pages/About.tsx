@@ -78,7 +78,7 @@ const About = () => {
               </div>
               <div className="bg-gradient-card rounded-xl p-8 shadow-luxury">
                 <img 
-                  src="/src/assets/m1-logo.jpg" 
+                  src="/assets/m1-logo.jpg" 
                   alt="M~1 Club Logo" 
                   className="w-32 h-32 mx-auto rounded-full animate-float mb-6"
                 />
