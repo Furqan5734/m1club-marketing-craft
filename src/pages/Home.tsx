@@ -30,7 +30,14 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="hero-section relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden">
+      <section 
+        className="hero-section relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden"
+        style={{
+          backgroundImage: "url('/assets/hero-marketing.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="absolute inset-0 bg-gradient-hero opacity-90 z-10"></div>
         <div className="relative z-20 container mx-auto px-4 animate-fade-in">
           <div className="max-w-4xl mx-auto space-y-8">
