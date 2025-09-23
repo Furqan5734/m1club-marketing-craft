@@ -35,7 +35,7 @@ const Home = () => {
         <div className="relative z-20 container mx-auto px-4 animate-fade-in">
           <div className="max-w-4xl mx-auto space-y-8">
             <img 
-              src="/src/assets/m1-logo.jpg" 
+              src="/assets/m1-logo.jpg" 
               alt="M~1 Club Logo" 
               className="w-24 h-24 mx-auto rounded-full animate-glow-pulse"
             />
