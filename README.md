@@ -1,73 +1,157 @@
-# Welcome to your Lovable project
+# M~1 Club - Premier Marketing Consultancy Website
 
-## Project info
+A stunning, professional marketing consultancy website built for M~1 Club, featuring a luxury design with golden accents and comprehensive business functionality.
 
-**URL**: https://lovable.dev/projects/26d256f3-5702-4398-b013-29a98b446dfc
+## 🌟 Features
 
-## How can I edit this code?
+- **Modern Design System**: Luxury gold and black theme with light/dark mode support
+- **Responsive Layout**: Beautiful on all devices and screen sizes
+- **Professional Pages**: Home, Services, About, Team, Contact with forms
+- **SEO Optimized**: Complete meta tags, structured data, and semantic HTML
+- **Interactive Elements**: Smooth animations, hover effects, and transitions
+- **Contact Forms**: Professional contact form with validation
+- **Theme Switching**: Light and dark mode toggle
 
-There are several ways of editing your application.
+## 🏢 Company Information
 
-**Use Lovable**
+- **Company**: M~1 Club
+- **Director & Founder**: Abdul Mohsi Shiekh
+- **Phone**: 077216048992
+- **Location**: London, United Kingdom
+- **Industry**: Marketing Consultancy & Brand Ambassador Services
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/26d256f3-5702-4398-b013-29a98b446dfc) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone or download this project**
+   ```bash
+   git clone <your-repository-url>
+   cd m1-club-website
+   ```
 
-Follow these steps:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to view the website
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Building for Production
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+The built files will be in the `dist` folder, ready for deployment.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Navigation.tsx  # Main navigation
+│   ├── Footer.tsx      # Site footer
+│   └── ThemeProvider.tsx # Dark/light theme provider
+├── pages/              # Main application pages
+│   ├── Home.tsx        # Homepage with hero section
+│   ├── Services.tsx    # Services and pricing
+│   ├── About.tsx       # Company story and values
+│   ├── Team.tsx        # Team members and careers
+│   ├── Contact.tsx     # Contact form and info
+│   └── NotFound.tsx    # 404 error page
+├── assets/             # Images and media files
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── index.css          # Global styles and design system
+└── main.tsx           # Application entry point
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Design System
 
-## What technologies are used for this project?
+The website uses a sophisticated design system with:
 
-This project is built with:
+- **Colors**: Luxury gold (#B8860B) primary with elegant dark secondary
+- **Typography**: Modern, professional fonts with proper hierarchy
+- **Shadows**: Luxury shadows with golden glow effects
+- **Animations**: Smooth transitions and hover effects
+- **Responsive**: Mobile-first design approach
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🌙 Dark/Light Mode
 
-## How can I deploy this project?
+The website automatically adapts to user preferences and includes a theme toggle in the navigation. The design maintains its luxury aesthetic in both modes.
 
-Simply open [Lovable](https://lovable.dev/projects/26d256f3-5702-4398-b013-29a98b446dfc) and click on Share -> Publish.
+## 📞 Contact Information
 
-## Can I connect a custom domain to my Lovable project?
+- **Phone**: 077216048992
+- **Email**: info@m1club.com
+- **Location**: London, United Kingdom
+- **Website**: [Your deployed URL]
 
-Yes, you can!
+## 🛠 Technologies Used
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - High-quality UI components
+- **Lucide React** - Beautiful icons
+- **React Router** - Client-side routing
+- **Vite** - Fast build tool and development server
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📱 Pages Overview
+
+1. **Home** - Hero section, company overview, founder introduction
+2. **Services** - Detailed service offerings with pricing
+3. **About** - Company story, values, and journey timeline
+4. **Team** - Team members and brand ambassador program
+5. **Contact** - Contact form, business information, and FAQ
+
+## 🔧 Customization
+
+To customize the website for your needs:
+
+1. **Update Company Info**: Edit contact details in Footer.tsx and Contact.tsx
+2. **Modify Services**: Update service offerings in Services.tsx
+3. **Change Colors**: Modify the design system in src/index.css
+4. **Add Content**: Update team members, testimonials, or case studies
+5. **Logo**: Replace the logo file in src/assets/m1-logo.jpg
+
+## 📈 SEO Features
+
+- Semantic HTML structure
+- Meta tags for social sharing
+- Structured data markup
+- Fast loading times
+- Mobile optimization
+- Accessible design
+
+## 🚀 Deployment
+
+The website can be deployed to any static hosting service:
+
+- **Netlify**: Connect your Git repository for automatic deployments
+- **Vercel**: Perfect for React applications
+- **GitHub Pages**: Free hosting for open source projects
+- **Traditional Web Hosting**: Upload the `dist` folder contents
+
+## 📄 License
+
+This project is built specifically for M~1 Club. All rights reserved.
+
+---
+
+**Built with ❤️ for M~1 Club**
+
+For support or questions about this website, please contact Abdul Mohsi Shiekh at 077216048992.
