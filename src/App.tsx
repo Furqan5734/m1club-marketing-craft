@@ -11,6 +11,8 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
+import BrandAmbassador from "./pages/BrandAmbassador";
+import Develop from "./pages/Develop";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +29,8 @@ const App = () => (
             <main className="flex-grow">
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/brand-ambassador" element={<BrandAmbassador />} />
+                <Route path="/develop" element={<Develop />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/team" element={<Team />} />
