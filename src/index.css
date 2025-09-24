@@ -2,98 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-/* M~1 Club Design System - Luxury Marketing Theme 
+/* M~1 Club Design System - Link Marketing Inspired 
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Light theme - Premium whites and golds */
+    /* Light theme - Clean and modern like Link Marketing */
     --background: 0 0% 100%;
-    --foreground: 0 0% 5%;
+    --foreground: 0 0% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 5%;
+    --card-foreground: 0 0% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --popover-foreground: 0 0% 13%;
 
-    /* Luxury gold primary colors inspired by M~1 logo */
-    --primary: 45 100% 35%;
+    /* Professional primary colors */
+    --primary: 16 100% 50%; /* Orange accent like Link Marketing */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 45 100% 50%;
+    --primary-glow: 16 100% 60%;
 
-    /* Elegant secondary colors */
-    --secondary: 45 15% 15%;
-    --secondary-foreground: 45 100% 85%;
+    /* Clean secondary colors */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 13%;
 
-    --muted: 45 5% 95%;
-    --muted-foreground: 45 5% 40%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 45 100% 95%;
-    --accent-foreground: 45 100% 35%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 13%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 45 10% 90%;
-    --input: 45 10% 95%;
-    --ring: 45 100% 35%;
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 16 100% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Luxury gradients */
+    /* Simple gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.5), hsl(var(--secondary) / 0.5));
+    --gradient-hero: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5));
     --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--muted)));
     
-    /* Elegant shadows with gold glow */
-    --shadow-luxury: 0 20px 40px -15px hsl(var(--primary) / 0.3);
-    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.4);
-    --shadow-card: 0 4px 20px -5px hsl(var(--foreground) / 0.1);
+    /* Clean shadows */
+    --shadow-luxury: 0 4px 20px -5px hsl(var(--foreground) / 0.1);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 2px 10px -3px hsl(var(--foreground) / 0.1);
     
     /* Smooth transitions */
-    --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-fast: all 0.2s ease-out;
+    --transition-luxury: all 0.3s ease;
+    --transition-fast: all 0.2s ease;
   }
 
   .dark {
-    /* Dark theme - Deep blacks with golden accents */
-    --background: 0 0% 5%;
-    --foreground: 45 100% 95%;
+    /* Dark theme - Clean and professional */
+    --background: 0 0% 9%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 45 100% 95%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 45 100% 95%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Golden primary remains consistent */
-    --primary: 45 100% 50%;
-    --primary-foreground: 0 0% 5%;
-    --primary-glow: 45 100% 60%;
+    /* Orange primary remains consistent */
+    --primary: 16 100% 55%;
+    --primary-foreground: 0 0% 9%;
+    --primary-glow: 16 100% 65%;
 
-    /* Dark secondary with golden touch */
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 45 100% 85%;
+    /* Dark secondary */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 0 0% 10%;
-    --muted-foreground: 45 20% 65%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 0 0% 15%;
-    --accent-foreground: 45 100% 50%;
+    --accent: 0 0% 18%;
+    --accent-foreground: 0 0% 95%;
 
     --destructive: 0 62.8% 50.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 12%;
-    --ring: 45 100% 50%;
+    --border: 0 0% 18%;
+    --input: 0 0% 15%;
+    --ring: 16 100% 55%;
     /* Dark theme shadows and gradients */
     --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--card)));
-    --shadow-luxury: 0 20px 40px -15px hsl(var(--primary) / 0.5);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.6);
-    --shadow-card: 0 4px 20px -5px hsl(var(--primary) / 0.2);
+    --shadow-luxury: 0 4px 20px -5px hsl(var(--foreground) / 0.1);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.4);
+    --shadow-card: 0 2px 10px -3px hsl(var(--foreground) / 0.2);
   }
 }
 
@@ -127,58 +127,79 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  /* Hero section styles */
+  /* Hero section styles - Link Marketing style */
   .hero-section {
-    background: var(--gradient-hero);
     position: relative;
     overflow: hidden;
+    background: #000;
   }
   
-  .hero-section::before {
-    content: '';
+  .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.3;
-    z-index: -1;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
   
-  /* Luxury button variants */
-  .btn-luxury {
-    background: var(--gradient-primary);
-    box-shadow: var(--shadow-luxury);
-    transition: var(--transition-luxury);
+  /* Clean button variants */
+  .btn-primary {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    transition: var(--transition-fast);
   }
   
-  .btn-luxury:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-glow);
+  .btn-primary:hover {
+    background: hsl(var(--primary-glow));
+    transform: translateY(-1px);
   }
   
-  /* Card hover effects */
-  .card-luxury {
-    background: var(--gradient-card);
+  /* Simple card effects */
+  .card-clean {
+    background: hsl(var(--card));
     box-shadow: var(--shadow-card);
-    transition: var(--transition-luxury);
+    transition: var(--transition-fast);
   }
   
-  .card-luxury:hover {
-    transform: translateY(-5px);
+  .card-clean:hover {
     box-shadow: var(--shadow-luxury);
   }
   
-  /* Logo glow effect */
-  .logo-glow {
-    filter: drop-shadow(0 0 20px hsl(var(--primary-glow) / 0.3));
+  /* Team member cards */
+  .team-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+  }
+  
+  .team-card img {
     transition: var(--transition-luxury);
   }
   
-  .logo-glow:hover {
-    filter: drop-shadow(0 0 30px hsl(var(--primary-glow) / 0.6));
+  .team-card:hover img {
     transform: scale(1.05);
+  }
+  
+  /* Gallery grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gallery-item {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: var(--radius);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-fast);
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
   }
 }

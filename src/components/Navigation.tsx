@@ -10,11 +10,10 @@ const Navigation = () => {
   const { theme, setTheme } = useTheme();
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "About", href: "/about" },
-    { name: "Team", href: "/team" },
-    { name: "Contact", href: "/contact" },
+    { name: "Start Here", href: "/", className: "text-primary font-semibold" },
+    { name: "Brand Ambassador", href: "/brand-ambassador" },
+    { name: "Develop with us", href: "/develop" },
+    { name: "Let's connect", href: "/contact" },
   ];
 
   const isActive = (href: string) => location.pathname === href;
@@ -30,8 +29,8 @@ const Navigation = () => {
               alt="M~1 Club Logo" 
               className="w-10 h-10 rounded-full logo-glow"
             />
-            <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              M~1 Club
+            <span className="text-xl font-bold text-foreground">
+              M~1 CLUB
             </span>
           </Link>
 
@@ -42,9 +41,11 @@ const Navigation = () => {
                 key={item.name}
                 to={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
+                  item.className || ""
+                } ${
                   isActive(item.href)
-                    ? "text-primary bg-accent"
-                    : "text-foreground hover:text-primary hover:bg-accent/50"
+                    ? "text-primary"
+                    : "text-foreground hover:text-primary"
                 }`}
               >
                 {item.name}
@@ -83,9 +84,11 @@ const Navigation = () => {
                   key={item.name}
                   to={item.href}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
+                    item.className || ""
+                  } ${
                     isActive(item.href)
-                      ? "text-primary bg-accent"
-                      : "text-foreground hover:text-primary hover:bg-accent/50"
+                      ? "text-primary"
+                      : "text-foreground hover:text-primary"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
